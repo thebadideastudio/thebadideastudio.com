@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; form-action 'self' https://app.kit.com; base-uri 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; form-action 'self' https://app.kit.com https://thebadideastudio.com; base-uri 'none'">
   <title>Grand Theft Cocoa: get notified when it's on Steam</title>
   <meta name="description" content="A co-op game for three hopeless thieves who stole a truck full of chocolate. Leave your email and we'll tell you when Grand Theft Cocoa is on Steam.">
   <link rel="canonical" href="https://thebadideastudio.com/grand-theft-cocoa/">
@@ -40,14 +40,15 @@
       <h1 class="signup__title">Grand Theft Cocoa</h1>
       <p class="signup__lead">Three hopeless thieves steal a truck full of chocolate and try to outrun the police in a co-op game for three players.</p>
 
-      <form class="signup-form" action="https://app.kit.com/forms/KIT_FORM_ID/subscriptions" method="post" accept-charset="UTF-8">
+      <form class="signup-form" action="https://app.kit.com/forms/10065438/subscriptions" method="post" accept-charset="UTF-8">
+        <input type="hidden" name="tags[]" value="24777480">
         <div class="signup-form__field">
           <label class="signup-form__label" for="signup-email">Email address</label>
           <input class="signup-form__input" id="signup-email" name="email_address" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>
         </div>
 
         <label class="signup-form__choice">
-          <input class="signup-form__checkbox" name="fields[KIT_PLAYTEST_FIELD]" type="checkbox" value="yes" aria-labelledby="signup-playtest-label" aria-describedby="signup-playtest-hint">
+          <input class="signup-form__checkbox" name="fields[playtest]" type="checkbox" value="yes" aria-labelledby="signup-playtest-label" aria-describedby="signup-playtest-hint">
           <span class="signup-form__choice-text" id="signup-playtest-label">I want to playtest it too</span>
           <span class="signup-form__choice-hint" id="signup-playtest-hint">Optional. We'll invite you when playtests open.</span>
         </label>
